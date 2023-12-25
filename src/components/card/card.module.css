@@ -1,8 +1,10 @@
 .container {
   margin-bottom: 50px;
   display: flex;
-  align-items: center;
-  gap: 50px;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #f2f4f5;
+  border-radius: 16px;
 }
 
 .imageContainer {
@@ -13,6 +15,7 @@
 
 .image {
   object-fit: cover;
+  border-radius: 16px;
 }
 
 .textContainer {
@@ -29,6 +32,15 @@
 .category {
   color: crimson;
   font-weight: 500;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 24px;
 }
 
 .desc {

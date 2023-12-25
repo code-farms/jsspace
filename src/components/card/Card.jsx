@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./card.module.css";
 import Link from "next/link";
-import img from "./../../../public/coding";
+import img from "./../../../public/coding.png";
 
 const Card = ({ key, item }) => {
   return (
@@ -15,15 +15,14 @@ const Card = ({ key, item }) => {
           <span className={styles.date}>10/11/2023</span>
           <span className={styles.category}>Coding</span>
         </div>
-        <Link href={`/posts/${item.slug}`}>
-          <h2>iu iuonhi jil</h2>
-        </Link>
-        {/* <p className={styles.desc}>{item.desc.substring(0, 60)}</p> */}
-        <div
-          className={styles.desc}
-          //   dangerouslySetInnerHTML={{ __html: item?.desc.substring(0, 60) }}
-        />
-        <Link href={`/posts/${item.slug}`} className={styles.link}>
+        <h2 className={styles.heading}>iu iuonhi jil</h2>
+        <p className={styles.text}>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sint
+          perferendis sit velit alias deserunt suscipit quibusdam. Iste,
+          exercitationem nobis!
+        </p>
+        <div className={styles.desc} />
+        <Link href="" className={styles.link}>
           Read More
         </Link>
       </div>

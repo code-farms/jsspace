@@ -34,7 +34,6 @@ const CategoryList = async () => {
       <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
         {data?.map((item) => {
-          console.log(item);
           <Link
             href="/blog?cat=style"
             className={`${styles.category} ${styles[item.slug]}`}

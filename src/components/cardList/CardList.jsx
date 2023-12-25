@@ -1,14 +1,22 @@
 import React from "react";
 import styles from "./cardList.module.css";
-import Pagination from "../pagination/Pagination";
+import Image from "next/image";
+import Card from "../card/Card";
 
-function CardList() {
+const CardList = async ({ page, cat }) => {
+  const posts = [1, 2, 3, 4, 5];
+
   return (
-    <div>
-      CardList
-      <Pagination />
+    <div className={styles.container}>
+      <h1 className={styles.title}>Recent Posts</h1>
+      <div className={styles.posts}>
+        {posts?.map((item) => (
+          <Card key={item} />
+        ))}
+      </div>
+      {/* <Pagination page={page} hasPrev={hasPrev} hasNext={hasNext} /> */}
     </div>
   );
-}
+};
 
 export default CardList;
